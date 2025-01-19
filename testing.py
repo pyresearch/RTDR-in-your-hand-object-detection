@@ -2,7 +2,7 @@ from PIL import Image
 import torch
 from transformers import AutoModelForObjectDetection, AutoImageProcessor
 import supervision as sv
-
+import pyresearch
 # Load model and processor
 CHECKPOINT = "output/checkpoint2"
 
@@ -47,5 +47,5 @@ def test_custom_model(image_path):
     annotated_image.show()
 
 # Test the function with an image
-test_image_path = "demo6.jpg"
+test_image_path = "demo5.jpg"
 test_custom_model(test_image_path)
